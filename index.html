@@ -159,7 +159,7 @@ function executeCommandAtGivenBaseUrl(reqString, dbBaseUrl, apiEndPointUrl) {
     }).fail(function (result) {
         var dataJsonObj = result.responseText;
         jsonObj = JSON.parse(dataJsonObj);
-    });
+    },"json");
     return jsonObj;
 }
 
